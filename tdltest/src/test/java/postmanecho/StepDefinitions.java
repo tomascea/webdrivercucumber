@@ -40,7 +40,6 @@ public class StepDefinitions extends WebDriverBase {
     @Then("I get {string} response")
     public void i_get_authenticated_true_response(String response){
         System.out.println("Response expected: "+response);
-        Assert.assertTrue(driver.getPageSource().contains(response));
         Assert.assertEquals(response, jsonFormattedResponse.getText());
     }
 

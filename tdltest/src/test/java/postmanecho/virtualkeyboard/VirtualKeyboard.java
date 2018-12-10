@@ -13,7 +13,7 @@ public class VirtualKeyboard {
             robot = new Robot();
             robot.keyPress(key);
             robot.keyRelease(key);
-            //to notice looking at the UI, add a thread sleep
+            //to see the entering text while looking at the UI, add a thread sleep
            /* try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
